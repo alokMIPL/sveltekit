@@ -1,14 +1,14 @@
 
 <script lang="ts">
-  let sub = "learners"
+
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>About</title>
 </svelte:head>
 
-<h1>Welcome {sub} to Home Page </h1>
-<a href="/about">About</a>
+<h1>Welcome to About Page </h1>
+<a href="/">Home</a>
 <a href="/char">Char</a>
 
 
