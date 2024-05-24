@@ -1,38 +1,64 @@
-# create-svelte
+# Svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+> Svelte is a tool for building fast web applications
+> Similar to React or Vue, its primary goal is to make it easy to build interactive user interfaces.
+> Unlike React or Vue which do the bulk of their work in the browser, Svelte converts your app into ideal JavaScript at build time.
+> instead of using technique like virtual DOM diffing, Svelte writes code that cleverly updates the DOM when the state of your app changes.
 
-## Creating a project
+# SvelteKit
 
-If you're seeing this, you've probably already done this step. Congrats!
+> SvelteKit is a framework for bulding high-performance web apps using Svelte.
+> Svelte is a component framework, SvelteKit is an app framework.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+#### Sveltekit is an app framework
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+#### Svelte: 
+> It's not quite ppossible to build a full features rich applcation ready to be deployed for production.
+> Svelte is a components frmework for building user interfaces.
+> You have to make decisions on other features of the app like routing, Server side rendering, Auth etc.
 
-## Developing
+#### SvelteKit:
+> It is a packages that uses Svelte for building user interfaces.
+> Loading with a lot more features that enables you to build full fledged production ready application.
+> Features exactly like routing, server side rendering, authentication, bundle optimization etc.
+> There's no need to install additional packages.
+> SvelteKit provides everythings for you.
+> Opinions and conventions which need to be followed to implement the above said features.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## why SvelteKit?
 
-```bash
-npm run dev
+> SvelteKit simplifies the process of buliding a web apllication for production
+1. File based routing
+2. Pre-rendering
+3. API routes
+4. Data fetching
+5. optimized production build system
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+###### How to start project in Svelte 
+``` npm cerate svelte@latest ``` and choose according to project requirment.
 
-## Building
 
-To create a production version of your app:
+## Page Store
 
-```bash
-npm run build
-```
+``` import {page} from '$app/store'; ```
 
-You can preview the production build with `npm run preview`.
+1. $page.url
+2. $page.params
+3. $page.routes
+4. $page.status
+5. $page.error
+6. $page.data
+7. $page.form
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Groups
+    
+  src/routes/
+    (app)/
+    dashboard/
+    item/
+    +layout.svelte
+    (website)/
+    about/
+    pricing/
+    +layout.sevlte
+    +page.svelte    
