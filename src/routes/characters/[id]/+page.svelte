@@ -1,5 +1,6 @@
 
 <script lang="ts">
+  import Character from '$lib/components/Character.svelte';
   export let data;
 
   $:character = data?.character;
@@ -9,18 +10,7 @@
   <title>{character.name}</title>
 </svelte:head>
 
-<h1>{character.name}</h1>
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/char">Char</a>
-
-
+<Character {...character}/>
 <style>
-  h1{
-    color: red;
-  }
-
-  a{
-    color: green;
-  }
+  
 </style>

@@ -8,16 +8,9 @@
 </svelte:head>
 
 <h1>Welcome {sub} to Home Page </h1>
-<a href="/about">About</a>
-<a href="/char">Char</a>
+
 
 
 <style>
-  h1{
-    color: red;
-  }
-
-  a{
-    color: green;
-  }
+  
 </style>

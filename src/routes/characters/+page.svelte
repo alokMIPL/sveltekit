@@ -5,12 +5,11 @@
 </script>
 
 <svelte:head>
-  <title>Char</title>
+  <title>Characters</title>
 </svelte:head>
 
-<h1>Welcome to Char Page </h1>
-<a href="/">Home</a>
-<a href="/about">About</a>
+<h1>Welcome to Characters Page </h1>
+
 
 <ul class="css">
   {#each characters as {name, id , image, occupation}}
@@ -25,10 +24,11 @@
         {occupation ? occupation : 'Unkonwn'}
       </p>
     </div>
-    
   </li>
   {/each}
 </ul>
+
+
 
 <style>
   h1{
