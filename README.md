@@ -52,13 +52,21 @@
 
 ## Groups
     
-  src/routes/
-    (app)/
-    dashboard/
-    item/
-    +layout.svelte
-    (website)/
-    about/
-    pricing/
-    +layout.sevlte
-    +page.svelte    
+>  src/routes/
+>   (app)/
+>    dashboard/
+>    item/
+>    +layout.svelte
+>    (website)/
+>    about/
+>    pricing/
+>    +layout.sevlte
+>    +page.svelte    
+
+## Parallel Loading
+
+> When we nevigate, sveltekit call all the load() functions concurrently
+
+> 1. Call all load() function at the same time.
+> 2. This reduce waterfalls.
+> 3. Be carefull not to re-interduce waterfalls.

@@ -8,6 +8,7 @@
 </svelte:head>
 
 <h1>Welcome to About Page </h1>
+<p>This is about page </p>
 
 
 
