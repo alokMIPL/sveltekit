@@ -70,3 +70,13 @@
 > 1. Call all load() function at the same time.
 > 2. This reduce waterfalls.
 > 3. Be carefull not to re-interduce waterfalls.
+
+## Server Side Svelte
+
+> 1. Secrets
+> 2. form input
+> 3. Auth
+> 4. Connection to a db
+> 5. Send emails/text messages
+> 6. Kicking off workflow
+> 7. Anything not safe to do in the browser.
